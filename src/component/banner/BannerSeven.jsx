@@ -1,6 +1,15 @@
 "use client"
 import { useEffect } from 'react';
-import Swiper, { Navigation, Pagination } from 'swiper';
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Autoplay,
+  Mousewheel,
+  Keyboard,
+} from 'swiper/modules';
+
+SwiperCore.use([Navigation, Pagination, Autoplay, Mousewheel, Keyboard]);
+
 
 const BannerSlider = () => {
     useEffect(() => {
