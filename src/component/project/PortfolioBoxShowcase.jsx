@@ -1,8 +1,17 @@
 "use client"
 import { useEffect } from 'react';
-import Swiper, { Navigation, Pagination, Keyboard, Autoplay, Mousewheel } from 'swiper';
+// Importa apenas o core
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Autoplay,
+  Mousewheel,
+  Keyboard,
+} from 'swiper/modules';
 
-Swiper.use([Navigation, Pagination, Keyboard, Autoplay, Mousewheel]);
+// E ativa os módulos
+SwiperCore.use([Navigation, Pagination, Autoplay, Mousewheel, Keyboard]);
+
 
 const SwiperSlider = () => {
     useEffect(() => {
