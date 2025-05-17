@@ -1,10 +1,16 @@
 "use client"
 // components/Testimonials.js
 import React from 'react';
-import SwiperCore, { Navigation } from 'swiper';
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Autoplay,
+  Mousewheel,
+  Keyboard,
+} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation, Pagination, Autoplay, Mousewheel, Keyboard]);
 
 const Testimonials = () => {
     const testimonials = [
